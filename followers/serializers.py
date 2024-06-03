@@ -6,6 +6,7 @@ class FollowerSerializer(serializers.ModelSerializer):
     """
     Serializer for the Follower model
     Create method handles the unique constraint on 'owner' and 'followed'
+    (prevents a user from following the same user multiple times)
     """
     owner = serializers.ReadOnlyField(source='owner.username')
     followed_name = serializers.ReadOnlyField(source='followed.username')
