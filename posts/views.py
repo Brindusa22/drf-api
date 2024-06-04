@@ -88,7 +88,7 @@ class PostList(generics.ListCreateAPIView):
         comments_count = Count('comment', distinct=True),
         likes_count = Count('likes', distinct=True)
     ).order_by('-created_at')
-    filters_backends = [
+    filter_backends = [
         filters.OrderingFilter
     ]
     ordering_fields = [
