@@ -118,6 +118,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-brindusa22-drfapi-az0kuaxwihq.ws-eu114.gitpod.io',
+]
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
