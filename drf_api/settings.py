@@ -35,12 +35,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEV' in os.environ
+# DEBUG = 'DEV' in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = [
    os.environ.get('ALLOWED_HOST'),
    'localhost',
-   '8000-brindusa22-drfapi-az0kuaxwihq.ws-eu114.gitpod.io'
+   '8000-brindusa22-drfapi-az0kuaxwihq.ws-eu114.gitpod.io',
    'https://brindusa22-moments-gtxpvuhnf2d.ws-eu114.gitpod.io'
 ]
 
